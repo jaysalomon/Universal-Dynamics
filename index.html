@@ -231,12 +231,16 @@
                 <div class="card">
                     <h3 class="subsection-title mt-0">Neural Network Regularization</h3>
                     <p class="mb-4">The EVIM functional was used to regularize a ResNet-18 network, successfully inducing a 4x increase in sparsity with only a 2.6% drop in accuracy. The chart below shows the trade-off.</p>
-                    <canvas id="sensitivityChart"></canvas>
+                    <div class="relative h-80 mt-4">
+                        <canvas id="sensitivityChart"></canvas>
+                    </div>
                 </div>
                 <div class="card">
                     <h3 class="subsection-title mt-0">Critical Validation: Scaling</h3>
                     <p class="mb-4">Power spectral analysis of information density fields confirmed theoretical scaling predictions with remarkable precision. The model predicted $\alpha \approx 0.4$ for 1D systems, and our experiment found $\alpha = 0.39 \pm 0.05$.</p>
-                    <canvas id="scalingChart"></canvas>
+                    <div class="relative h-80 mt-4">
+                        <canvas id="scalingChart"></canvas>
+                    </div>
                 </div>
             </div>
              <div class="card mt-12">
@@ -256,16 +260,24 @@
                 <h4 class="subsection-title text-xl text-center">Vorticity and Information Flow Across Layers</h4>
                 <div class="grid md:grid-cols-2 gap-8 mb-8">
                     <div class="bg-slate-900/50 p-4 rounded-lg border border-slate-700">
-                        <canvas id="avgVorticityChart"></canvas>
+                        <div class="relative aspect-video">
+                            <canvas id="avgVorticityChart"></canvas>
+                        </div>
                     </div>
                     <div class="bg-slate-900/50 p-4 rounded-lg border border-slate-700">
-                        <canvas id="maxVorticityChart"></canvas>
+                        <div class="relative aspect-video">
+                            <canvas id="maxVorticityChart"></canvas>
+                        </div>
                     </div>
                     <div class="bg-slate-900/50 p-4 rounded-lg border border-slate-700">
-                        <canvas id="circulationChart"></canvas>
+                        <div class="relative aspect-video">
+                            <canvas id="circulationChart"></canvas>
+                        </div>
                     </div>
                     <div class="bg-slate-900/50 p-4 rounded-lg border border-slate-700">
-                        <canvas id="infoDensityChart"></canvas>
+                        <div class="relative aspect-video">
+                            <canvas id="infoDensityChart"></canvas>
+                        </div>
                     </div>
                 </div>
 
