@@ -231,14 +231,14 @@
                 <div class="card">
                     <h3 class="subsection-title mt-0">Neural Network Regularization</h3>
                     <p class="mb-4">The EVIM functional was used to regularize a ResNet-18 network, successfully inducing a 4x increase in sparsity with only a 2.6% drop in accuracy. The chart below shows the trade-off.</p>
-                    <div class="relative h-80 mt-4">
+                    <div class="relative aspect-video mt-4">
                         <canvas id="sensitivityChart"></canvas>
                     </div>
                 </div>
                 <div class="card">
                     <h3 class="subsection-title mt-0">Critical Validation: Scaling</h3>
                     <p class="mb-4">Power spectral analysis of information density fields confirmed theoretical scaling predictions with remarkable precision. The model predicted $\alpha \approx 0.4$ for 1D systems, and our experiment found $\alpha = 0.39 \pm 0.05$.</p>
-                    <div class="relative h-80 mt-4">
+                    <div class="relative aspect-video mt-4">
                         <canvas id="scalingChart"></canvas>
                     </div>
                 </div>
@@ -346,11 +346,11 @@
                 <h3 class="subsection-title mt-0">Performance vs. Complexity: GAT vs. Hyper-Attention</h3>
                 <p class="mb-4">Benchmarking against Graph Attention Networks (GAT) shows EVIM-inspired Hyper-Attention networks achieve superior performance with dramatically fewer parameters.</p>
                 <div class="grid md:grid-cols-2 gap-8">
-                    <div>
+                    <div class="relative aspect-video">
                         <h4 class="text-center font-bold mb-2 text-slate-200">Predictive Accuracy (Lower is Better)</h4>
                         <canvas id="accuracyComparisonChart"></canvas>
                     </div>
-                    <div>
+                    <div class="relative aspect-video">
                         <h4 class="text-center font-bold mb-2 text-slate-200">Model Complexity (Parameters)</h4>
                         <canvas id="complexityComparisonChart"></canvas>
                     </div>
@@ -542,6 +542,7 @@ document.addEventListener('DOMContentLoaded', function () {
             options: {
                 indexAxis: 'y',
                 responsive: true,
+                maintainAspectRatio: false,
                 plugins: { legend: { display: false } },
                 scales: {
                     x: {
@@ -572,6 +573,7 @@ document.addEventListener('DOMContentLoaded', function () {
             options: {
                 indexAxis: 'y',
                 responsive: true,
+                maintainAspectRatio: false,
                 plugins: { legend: { display: false } },
                 scales: {
                     x: {
